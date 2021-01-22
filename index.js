@@ -56,13 +56,12 @@ export const burger = {
   price: 18, 
   category: "Lunch", 
   discount: function(string){
-    if(string = "teacher" || "student"){
-      price = 18 * .75;
+    if(string === "teacher" || string === "student"){
+     return this.price = 18 * .75;
     }
     else if(string = "public"){
-      price = 18 * .90;
-    }
-    return burger.discount("teacher"), burger.discount("student"), burger.discount("public");   
+     return this.price = 18 * .90;
+    }      
   }
 }
 
@@ -84,7 +83,7 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
-
+console.log(reviews[5], "feedback");
 
 
 
